@@ -1,7 +1,4 @@
-/*
- * Expected keys in object:
- * rooms, area, type
- */
+
 var Node = function(object) {
     for (var key in object)
     {
@@ -249,7 +246,7 @@ var data = [
 ];
 var run = function() {
 
-    nodes = new NodeList(3);
+    nodes = new NodeList(4);
     for (var i in data)
     {
         nodes.add( new Node(data[i]) );
@@ -266,6 +263,6 @@ var run = function() {
 };
 
 
-setInterval(run, 5000);
+setInterval(run, 1);
 run();
 
